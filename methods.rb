@@ -1,7 +1,7 @@
 # Class Code: 9372
 # Team 2: Ruby
 # Bernados, Gerard Alexander
-# https://www.onlinegdb.com/online_ruby_compiler
+# https://onecompiler.com/ruby
 
 def get_input_and_evaluate
   puts "Please Enter your number: "
@@ -28,15 +28,14 @@ def reverse_number(num)
   # placeholder for the reversed number
   reversed = 0
   # create a temp for num because we need a variable that will hold num with a removed last digit
-  temp = num
 
-  while temp > 0
+  while num > 0
     # get the last digit
-    last_digit_of_current_no = temp % 10
+    last_digit_of_current_no = num % 10
     # put last digit into the reversed
     reversed = reversed * 10 + last_digit_of_current_no
     # remove the last digit to move on to the next number
-    temp = temp / 10
+    num = num / 10
   end
   # return reversed
   reversed
